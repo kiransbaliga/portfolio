@@ -73,13 +73,19 @@ button:focus {
   margin-bottom: 50px; }
 
 .ml-15 {
-  margin-left: 15px; }
+  margin-left: 10px;
+  margin-right:150px;
+  
+}
 
 .ml-20 {
   margin-left: 20px; }
 
 .mt-50 {
   margin-top: 50px; }
+.mail{
+  margin-left:25px;
+}
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/

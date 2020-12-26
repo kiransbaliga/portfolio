@@ -25,6 +25,9 @@ Author E-mail: naimlasker@gmail.com
 /* Wide Mobile Layout: 480px */
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+html{
+  scroll-behavior: smooth;
+}
 body {
   line-height: 26px;
   font-size: 15px;
@@ -2947,8 +2950,12 @@ h6 {
     margin-bottom: 4px;
     transition: all 400ms linear;
     cursor: pointer; }
-
-  .navbar .container {
+    .container{
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 25%;
+    }
+  .navbar  {
     padding-left: 15px;
     padding-right: 15px; }
 

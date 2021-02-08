@@ -1,89 +1,294 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<!doctype html>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.2.6/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.2.6/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.2.6/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.2.6/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.2.6/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.2.6/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.2.6/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.2.6/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.2.6/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.2.6/firebase-performance.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Kiran S Baliga</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+<body>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+	<!--================ Start Header Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item active"><a class="nav-link" href=#home>Home</a></li>
+							<li class="nav-item"><a class="nav-link" href=#about>About</a></li>
+							<li class="nav-item"><a class="nav-link" href=#contact>Contact</a></li>
+							<li class="nav-item"><a class="nav-link" href=#skills>Skills</a></li>
+							<li class="nav-item"><a class="nav-link" href=#projects>Projects</a></li>
+							<li class="nav-item"><a class="nav-link" href="https://kiransbaliga.wixsite.com/imagix-online" target="_blank">Blog</a></li>
+								
+								</ul>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ End Header Area =================-->
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+	<!--================ Start Home Banner Area =================-->
+	<section class="home_banner_area">
+		<div class="banner_inner" id="home">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="banner_content">
+							<h3 class="text-uppercase">Hola !</h3>
+							<h1 class="text-uppercase">I am Kiran S Baliga</h1>
+							<h5 class="text-uppercase"> ML | Flutter Enthusiast</h5>
+							<div class="d-flex align-items-center">
+								<a class="primary_btn" href="mailto:kiransbaliga@gmail.com"><span>Hire Me</span></a>
+								<a class="primary_btn tr-bg" href="./resume_Kiransbaliga.pdf" download="resume_Kiransbaliga"><span>Get CV</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="home_right_img">
+							<img class="" src="img/banner/home-right.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Home Banner Area =================-->
+
+	<!--================ Start About Us Area =================-->
+	<nav class="About" id="about"></nav>
+	<section class="about_area section_gap">
+		<div class="container" id="about">
+			<div class="row justify-content-start align-items-center">
+				<div class="col-lg-5">
+					<div class="about_img">
+						<img class="" src="img/about-us.png" alt="">
+					</div>
+				</div>
+
+				<div class="offset-lg-1 col-lg-5">
+					<div class="main_title text-left">
+						<h2>let Me <br>
+							Introduce  <br>
+							myself</h2>
+						<p>
+							I am an ML and Flutter Enthusiast who is currently exploring Deep Learning
+						</p>
+						<p>
+							I am now working on <a href="https://beckn.org">beckn</a> in the alpha testing phase.
+							I am currently pursuing B.Tech in Computer Science under Mar Athanasius College of Engineering
+							I am an active member of IEEE, Computer Society, NetX and IEDC.
+						</p>
+						<a class="primary_btn" href="./resume_Kiransbaliga.pdf" download="resume_Kiransbaliga"><span>Download CV</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End About Us Area =================-->
+
+	<!--================ Srart Brand Area =================-->
+
+				<div class="offset-lg-2 col-lg-4 col-md-6" id="contact">
+					<div class="client-info">
+						<div class="d-flex mb-50">
+							<span class="lage"><img src="img/banner.gif"></span>
+							
+						</div>
+						<div class="call-now d-flex">
+							<div>
+								<span class="fa fa-phone"></span>
+							</div>
+							<div class="ml-15">
+								<a href="tel: 9544737577"><p>call now</p></a>
+								<h3>9544737577</h3>
+							</div>
+							
+							<div class="mail">
+								<span class="fa fa-envelope"></span>
+							</div>
+							<div class="ml-15">
+								<a href="mailto:kiransbaliga@gmail.com"><p>Mail now</p></a>
+								<h3>kiransbaliga@gmail.com</h3>
+							</div>
+							<div class="mail">
+								<span class="fa fa-github"></span>
+							</div>
+							<div class="ml-15">
+								<a href="https://github.com/kiransbaliga" target="_blank"><p>View now</p></a>
+								<h3>@kiransbaliga</h3>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Brand Area =================-->
+
+	<!--================ Start Features Area =================-->
+	<section class="features_area" id="skills">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8 text-center">
+					<div class="main_title">
+						<h2>SKILLS </h2>
+						<p>
+							I can develop in these platforms!
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row feature_inner">
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="img/services/s3.png" alt="">
+						<h4>Flutter</h4>
+						<p>Cross platform development using Flutter.<br> ⭐⭐⭐⭐</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="img/services/s2.png" alt="">
+						<h4>ML | AI developing</h4>
+						<p>Devloping ML and AI algorithms<br> ⭐⭐⭐⭐</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="img/services/s1.png" alt="">
+						<h4>Python</h4>
+						<p>Developing in python<br> ⭐⭐⭐⭐</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="img/services/s4.png" alt="">
+						<h4>C/C++</h4>
+						<p>Developing in C/C++<br> ⭐⭐⭐</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Features Area =================-->
+
+	<!--================Start Portfolio Area =================-->
+	<div class="pro" id="projects">  
+	<section class="portfolio_area" id="projects">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main_title text-left">
+						<h2>
+							Recently finished projects </h2>
+					</div>
+				</div>
+			</div>
+			
+		
+				<div class="row portfolio-grid justify-content-center">
+					<div class="col-lg-4 col-md-6 all latest">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/proj1.png" alt="">
+								<div class="overlay"></div>
+								<a href="https://kiransbaliga.github.io/moosik" target="_blank">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="https://kiransbaliga.github.io/moosik" target="_blank">Moosik</a></h4>
+								<p>Cross platform music player app</p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+	<!--================End Portfolio Area =================-->
+
+	
+	<!--================Footer Area =================-->
+	<footer class="footer_area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="footer_top flex-column">
+						<div class="footer_logo">
+							<a href="#">
+								<img src="img/logo.png" alt="">
+							</a>
+							<h4></h4>
+						</div>
+						<div class="footer_social">
+							<a href="https://www.instagram.com/itz_kiranz/" target="_blank"><i class="fa fa-instagram"></i></a>
+							<a href="https://twitter.com/kiransbaliga" target="_blank"><i class="fa fa-twitter"></i></a>
+							<a href="https://www.linkedin.com/in/kiran-s-baliga-6a751618b/" target="_blank"><i class="fa fa-linkedin"></i></a>
+							<a href="https://github.com/kiransbaliga"><i class="fa fa-github" target="_blank"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row footer_bottom justify-content-center">
+				<p class="col-lg-8 col-sm-12 footer-text">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		</div>
+	</footer>
+	<!--================End Footer Area =================-->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="vendors/isotope/isotope-min.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="js/gmaps.min.js"></script>
+	<script src="js/theme.js"></script>
+</body>
+
 </html>

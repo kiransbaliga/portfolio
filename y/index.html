@@ -23,18 +23,18 @@
 	<!--================ Start Header Area =================-->
 	<header class="header_area">
 		<div class="main_menu">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light bg-white">
+				<div class="container pt-0">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					<button class="navbar-toggler bg-primary" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
 					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+					<div class="collapse navbar-collapse offset container pt-0" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav justify-content-end">
 							<li class="nav-item active"><a class="nav-link" href=#home>Home</a></li>
 							<li class="nav-item"><a class="nav-link" href=#about>About</a></li>
@@ -42,10 +42,6 @@
 							<li class="nav-item"><a class="nav-link" href=#skills>Skills</a></li>
 							<li class="nav-item"><a class="nav-link" href=#projects>Projects</a></li>
 							<li class="nav-item"><a class="nav-link" href="https://kiransbaliga.wixsite.com/imagix-online" target="_blank">Blog</a></li>
-								
-								</ul>
-							</li>
-							
 						</ul>
 					</div>
 				</div>
@@ -114,39 +110,44 @@
 	<!--================ End About Us Area =================-->
 
 	<!--================ Srart Brand Area =================-->
-
-				<div class="offset-lg-2 col-lg-4 col-md-6" id="contact">
-					<div class="client-info">
-						<div class="d-flex mb-50">
-							<span class="lage"><img src="img/banner.gif"></span>
-							
-						</div>
-						<div class="call-now d-flex">
-							<div>
-								<span class="fa fa-phone"></span>
-							</div>
-							<div class="ml-15">
-								<a href="tel: 9544737577"><p>call now</p></a>
-								<h3>9544737577</h3>
-							</div>
-							
-							<div class="mail">
-								<span class="fa fa-envelope"></span>
-							</div>
-							<div class="ml-15">
-								<a href="mailto:kiransbaliga@gmail.com"><p>Mail now</p></a>
-								<h3>kiransbaliga@gmail.com</h3>
-							</div>
-							<div class="mail">
-								<span class="fa fa-github"></span>
-							</div>
-							<div class="ml-15">
-								<a href="https://github.com/kiransbaliga" target="_blank"><p>View now</p></a>
-								<h3>@kiransbaliga</h3>
-							</div>
-						</div>
-						
+	<section>
+		<div class="col-md-10 col-12 offset-lg-2" id="contact">
+			<div class="client-info p-0">
+				<div class="d-flex mb-50">
+					<span class="lage"><img src="img/banner.gif" class="w-100"></span>
+				</div>
+			</div>
+		</div>
+		<style>
+			@media(max-width: 376px){
+				.client-info{
+					width: 182% !important;
+					transform: translateX(-235px);
+				}
+			}
+		</style>
+		<div class="call-now container">
+			<div class="row">
+				<div class="col-lg-3 offset-lg-1 col-md-6 mb-5">
+					<div class="d-flex align-items-end">
+						<span class="fa fa-phone"></span>
+						<a href="tel: 9544737577" class="ml-3"><p>call now</p></a>
 					</div>
+					<h3>9544737577</h3>
+				</div>
+				<div class="col-lg-3 offset-lg-1 col-md-6 mb-5">
+					<div class="d-flex align-items-end">
+						<span class="fa fa-envelope"></span>
+						<a href="mailto:kiransbaliga@gmail.com" class="ml-3"><p>Mail now</p></a>
+					</div>
+					<h3>kiransbaliga@gmail.com</h3>
+				</div>
+				<div class="col-lg-3 offset-lg-1 col-md-6 mb-5">
+					<div class="d-flex align-items-end">
+						<span class="fa fa-github"></span>
+						<a href="https://github.com/kiransbaliga" class="ml-3" target="_blank"><p>View now</p></a>
+					</div>
+					<h3>@kiransbaliga</h3>
 				</div>
 			</div>
 		</div>

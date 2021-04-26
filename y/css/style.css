@@ -92,6 +92,17 @@ button:focus {
 }
 
 /*---------------------------------------------------- */
+.header_area .navbar .nav .nav-item .nav-link {
+  line-height: 40px;
+  margin-left: 10%;
+  display: block;
+  border-bottom: 1px solid #0003 !important;
+  border-radius: 0px;
+  color: gray !important;
+}
+.home_banner_area .banner_inner .banner_content .primary_btn {
+  margin-right: 15px !important;
+}
 /*----------------------------------------------------*/
 .section_gap {
   padding: 200px 0; }

@@ -1,10 +1,16 @@
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("container pt-0").style.top = "0";
-  } else {
-    document.getElementById("container pt-0").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-} 
+$(window).on("load",function() {
+    $(window).scroll(function() {
+      var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+      $(".fade").each(function() {
+        /* Check the location of each desired element */
+        var objectBottom = $(this).offset().top + $(this).outerHeight()-500;
+        
+        /* If the element is completely within bounds of the window, fade it in */
+        if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+          if ($(this).css("opacity")==0) {$(this).fadeTo(50,1);}
+        } else { //object goes out of view (scrolling up)
+          if ($(this).css("opacity")==1) {$(this).fadeTo(50,0);}
+        }
+      });
+    }).scroll(); //invoke scroll-handler on page-load
+  });

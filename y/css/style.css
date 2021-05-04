@@ -233,10 +233,7 @@ button:focus {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .fade {
-  margin: 50px;
-  padding: 50px;
-  
-  opacity: 0;
+  opacity: 1;
 }
 .nav {
   height: var(--header-height);

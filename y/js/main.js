@@ -4,7 +4,7 @@ $(window).on("load",function() {
       if( $(window).width()>991) {
       $(".fade").each(function() {
         /* Check the location of each desired element */
-        var objectBottom = $(this).offset().top + $(this).outerHeight()-900;
+        var objectBottom = $(this).offset().top + $(this).outerHeight()-600;
         
         /* If the element is completely within bounds of the window, fade it in */
         if (objectBottom < windowBottom) { //object comes into view (scrolling down)

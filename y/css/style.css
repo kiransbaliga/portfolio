@@ -96,9 +96,11 @@ button:focus {
   line-height: 40px;
   margin-left: 10%;
   display: block;
-  border-bottom: 1px solid #0003 !important;
   border-radius: 0px;
-  color: gray !important;
+  color: black !important;
+}
+.header_area .navbar .nav .nav-item .nav-link:hover{
+  color: #4458dc !important;
 }
 .home_banner_area .banner_inner .banner_content .primary_btn {
   margin-right: 5px !important;
@@ -3571,3 +3573,19 @@ h6 {
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
+.navbar_fixed{
+  position: fixed;
+  animation: navbar_transition 200ms ease forwards;
+  background-color: white !important;
+  z-index: 1;
+  width: 100%;
+}
+
+@keyframes navbar_transition{
+  from{
+    top: -500px;
+  }
+  to{
+    top: 0;
+  }
+}
